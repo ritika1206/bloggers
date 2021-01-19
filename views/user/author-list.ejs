@@ -1,0 +1,16 @@
+<%- include("../includes/header") %>
+
+</head>
+<body>
+    <%- include("../includes/nav-bar") %>
+    <div class="c-container">
+        <% for(i in users) { %>
+            <div class="c-item">
+                <img src="<%= users[i].avatarUrl %>">
+                <h4><%= users[i].username %></h4>
+                <button>View</button>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<%- include("../includes/header") %>
+
+</head>
+<body>
+    <%- include("../includes/nav-bar") %>
+    <div class="blog-detail">
+        <h1 id="blog-detail-title"><%= blog.title %></h1>
+        <hr>
+        <img src="<%= blog.imgUrl %>" id="blog-detail-img">
+        <p id="blog-detail-content"><%= blog.content %></p>
+    </div>
+    <div class="like-comment-container">
+        <div class="lc-item"><button id="blog-like-btn">Like</button></div>
+        <div class="lc-item">
+            <label for="comment">Comment:</label>
+            <textarea id="comment"></textarea>
+            <button>Comment</button>
+        </div>
+    </div>
+</body>
+</html>

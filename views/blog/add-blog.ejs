@@ -1,0 +1,22 @@
+<%- include("../includes/header") %>
+</head>
+<body>
+    <%- include("../includes/nav-bar") %>
+    <h1>Create Blog</h1>
+    <hr>
+    <form method="POST" action="/add-blog" class="form-control">
+        <label for="title">Blog Title:</label>
+        <input type="text" name="title" id="title">
+        <label for="imgUrl">Image URL:</label>
+        <input type="url" name="imgUrl" id="imgUrl">
+        <label for="category">Select Blog Category:</label>
+        <select id="category" name="category">
+            <% for(i in categories){ %>
+                    <option value="<%=categories[i]%>"><%=categories[i]%></option>
+            <% } %>
+        </select>
+        <label for="content">Blog Content:</label>
+        <textarea id="content" name="content"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>

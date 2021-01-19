@@ -1,0 +1,15 @@
+<%- include("../includes/header") %>
+</head>
+<body>
+    <%- include("../includes/nav-bar") %>
+    <h1>Login</h1>
+    <hr>
+    <form method="POST" action="/login" class="form-control">
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
