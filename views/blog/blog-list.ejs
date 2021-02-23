@@ -3,14 +3,14 @@
 </head>
 <body>
     <%- include("../includes/nav-bar") %>
-    <h1>Fashion</h1>
+    <h1><%= blogs[0].category %></h1>
     <hr>
     <div class="c-container">
         <% for(i in blogs) { %>
             <div class="c-item">
                 <img src="<%= blogs[i].imgUrl %>">
                 <h4><%= blogs[i].title %></h4>
-                <button>Read</button>
+                <button><a href="/blog-detail/<%= blogs[i].title %>" id="btn-to-link">Read</a></button>
             </div>
         <% } %>
     </div>

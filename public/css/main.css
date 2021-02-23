@@ -16,8 +16,10 @@ hr {
 nav {
     border: 1px solid black;
     background-color: #5e5e5e;
-    margin-bottom: 3%;
+    margin-bottom: 3%
     box-shadow: 1.5px 1.5px 8px #ababab;
+    /* position: fixed; */
+    width: 100%;
 }
 
 .nav-container {
@@ -26,6 +28,7 @@ nav {
     justify-content: space-evenly;
     margin-top: 0.7%;
     margin-bottom: 0.7%;
+    /* position: fixed; */
 }
 
 .nav-item {
@@ -51,8 +54,9 @@ button {
     padding: 3px 5px 3px 5px;
     border-radius: 3.5px;
     font-size: 1em;
-    margin-bottom: 2%;
-    box-shadow: none;
+    margin-bottom: 3%;
+    box-shadow: 0.5px 0.5px 1px #808080;
+    border: 1.5px solid black;
 }
 
 button:hover {
@@ -66,6 +70,7 @@ button:hover {
     /* align-items: center; */
     margin-bottom: 7%;
     /* height: 10%; */
+    /* margin-top: 5%; */
 }
 
 .c-item img {
@@ -94,6 +99,11 @@ button:hover {
     margin-top: 2%;
     margin-bottom: 1.5%;
     text-decoration: underline;
+}
+
+#btn-to-link {
+    text-decoration: none;
+    color: white;
 }
 
 /* ----------------------------------------------------------------- */
@@ -301,4 +311,36 @@ button:hover {
 .lc-item button {
     margin-left: 5%;
        
+}
+
+/* ------------------------------------------------------------------ */
+
+#land-pg {
+    background: radial-gradient(circle, white, #171717);
+}
+
+#landing-hr {
+    color: black;
+}
+
+.landing {
+    width: 60vw;
+    height: 50vh;
+    text-align: center;
+    margin-top: 20vh;
+    margin-left: 20vw;
+    margin-bottom: 15%;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0.8px 0.8px 5px #616161;
+    background: #ebebeb;
+}
+
+.landing-btn {
+    border: 2px solid black;
+    font-size: 1.4em;
+}
+
+.landing h1 {
+    font-size: 3.5em;
 }

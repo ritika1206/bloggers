@@ -3,81 +3,13 @@
 <body>
     <%- include("../includes/nav-bar") %>
     <div class="c-container">
-            <div class="c-item">
-                <img src="./images/Fashion.jpg">
-                <h4>Fashion</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Food.jpg">
-                <h4>Food</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Travel.jpg">
-                <h4>Travel</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Fitness.jpg">
-                <h4>Fitness</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Lifestyle.jpg">
-                <h4>Lifestyle</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Music.jpg">
-                <h4>Music</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Sports.jpg">
-                <h4>Sports</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Politics.jpg">
-                <h4>Politics</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Parenting.jpg">
-                <h4>Parenting</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Business.jpg">
-                <h4>Business</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Movies.jpg">
-                <h4>Movies</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Gaming.jpg">
-                <h4>Gaming</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Science.jpg">
-                <h4>Science</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Pet.jpg">
-                <h4>Pet</h4>
-                <button>Explore</button>
-            </div>
-            <div class="c-item">
-                <img src="./images/Dance.jpg">
-                <h4>Dance</h4>
-                <button>Explore</button>
-            </div>
+            <% for(i in categories){ %>
+                <div class="c-item">
+                    <img src="./images/<%= categories[i] %>.jpg">
+                    <h4><%= categories[i] %></h4>
+                    <button><a href="/blog-list/<%= categories[i] %>" id="btn-to-link">Explore</a></button>
+                </div>
+            <% } %>
     </div>
 </body>
 </html>
